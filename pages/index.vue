@@ -30,11 +30,11 @@
       <h1 class="name">Hyungsuk Do</h1>
       <!-- <h2 class="title">I build things for the web.</h2> -->
       <p class="description">
-        I was really excited to apply for this job, even though I mostly work on frontend stuff with MPA right now. 
-        I think my time with JavaScript and building backend things like REST APIs with ASP.NET gives me a good start to help out in an SPA setup.
-        Before our interview, I wanted to learn more about Nuxt and Vue, so I made a little portfolio with Nuxt. 
-        It was so much fun—way more lively than MPA—and I loved it. I'd be so happy to bring this excitement to <span class="highlight">Morningstar</span>. 
-        I've always looked up to this company in the finance world, and I'd love the chance to learn, grow, and do my best here. 
+        I’ve been mostly working on frontend stuff with MPA lately, but I’m really excited about SPA and want to build my skills in that area.
+        I think my time with JavaScript and making backend things like REST APIs with ASP.NET gives me a good start for it.
+        Recently, I decided to try something new and built a little personal portfolio using Nuxt.js. 
+        It was so much fun—way more lively than MPA—and I loved it. I’m really into SPA these days and even plan to add more features to my portfolio soon. 
+        I’d love to keep growing my career toward SPA and do my best in that space 
         <a href="https://github.com/WithNikos" target="_blank" rel="noopener noreferrer" class="company-link">Code for HS's Portfolio</a>.
       </p>
     </section>
@@ -79,14 +79,15 @@
         </div>
 
         <div class="tab-content" v-if="currentTab === 'ADPH'">
-          <h3 class="job-title">Full Stack Developer <span class="company">@ Alabama Department of Public Health</span></h3>
+          <h3 class="job-title">Senior Full Stack Developer <span class="company">@ Alabama Department of Public Health</span></h3>
           <p class="job-duration">AUG 2022 - Present</p>
           <ul class="job-description">
-            <li>Primary developer for the Electronic Vital Events Registration System, managing vital records for hospitals, public health departments, and funeral homes.</li>
-            <li>Designed and developed secure, scalable applications using C#, ASP.NET Core, SQL Server, JavaScript, MVC, and REST APIs.</li>
-            <li>Developed user-friendly UI components with jQuery, Bootstrap, HTML, and CSS.</li>
-            <li>Implemented T-SQL stored procedures for efficient data processing and reporting.</li>
-            <li>Integrated third-party APIs to enhance system interoperability and performance.</li>
+            <li>Transformed legacy applications into modern, high-performance.NET Core solutions, enhancing scalability and efficiency</li>
+            <li>Developed and maintained the Electronic Vital Events Registration System, a web application handling critical public health records for hospitals, public health departments, etc.</li>
+            <li>Built scalable backend solutions using C#, ASP.NET, JavaScript, SQL Server, and T-SQL, with RESTful APIs </li>
+            <li>Created intuitive UI components using jQuery, JavaScript, HTML, CSS, and Bootstrap </li>
+            <li>Integrated third-party APIs to improve system interoperability and automated data workflows </li>
+            <li>Collaborated with business analysts, project managers, and stakeholders to align development with organizational goals </li>
           </ul>
         </div>
 
@@ -94,10 +95,10 @@
           <h3 class="job-title">Full Stack Developer <span class="company">@ Hyundai Mobis North America</span></h3>
           <p class="job-duration">APR 2022 - MAY 2022</p>
           <ul class="job-description">
-            <li>Developed enterprise-level web applications supporting vehicle module tracking in manufacturing plants.</li>
-            <li>Designed robust backend systems using C#, ASP.NET Core, SQL, and JavaScript.</li>
-            <li>Optimized database performance and implemented complex T-SQL queries.</li>
-            <li>Conducted system analysis, debugging, and troubleshooting for real-time applications.</li>
+            <li>Maintained enterprise-level web applications for vehicle module tracking, resolving bugs and making updates as needed </li>
+            <li>Worked with C#, ASP.NET Core, SQL, and JavaScript to support and enhance backend functionality </li>
+            <li>Developed complex T-SQL queries and optimized relational database performance </li>
+            <li>Performed system analysis, debugging, and troubleshooting for real-time data processing applications </li>
           </ul>
         </div>
       </div>
@@ -127,7 +128,7 @@
               <li>Bootstrap</li>
               <li>T-SQL</li>
               <li>MSSQL</li>
-              <li>REST API</li>
+              <li>RESTful APIs</li>
               <li>Telerik UI</li>
               <li>ArcGIS API</li>
               <li>Multiple Pages Application</li>
