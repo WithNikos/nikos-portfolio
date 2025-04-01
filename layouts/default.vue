@@ -2,7 +2,9 @@
   <div class="layout">
     <header class="header">
       <nav class="nav">
-        <NuxtLink to="/" class="logo">HS</NuxtLink>
+        <NuxtLink to="/" class="logo">
+          <span class="logo-full">HS</span>
+        </NuxtLink>
         <div class="nav-links">
           <NuxtLink to="#about" class="nav-link"><span class="nav-number">01.</span> About</NuxtLink>
           <NuxtLink to="#experience" class="nav-link"><span class="nav-number">02.</span> Experience</NuxtLink>
@@ -44,9 +46,13 @@
 
 .logo {
   color: var(--gold);
+  font-family: "SF Mono", monospace;
   font-size: 24px;
-  font-weight: bold;
-  /* text-decoration: none; */
+  text-decoration: none;
+}
+
+.logo-mobile {
+  display: none;
 }
 
 .nav-links {
@@ -83,5 +89,27 @@
 
 .main {
   padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-end;
+  }
+
+  .nav {
+    justify-content: flex-end;
+  }
+
+  .logo-full {
+    display: none;
+  }
+  
+  .logo-mobile {
+    display: inline;
+  }
 }
 </style> 

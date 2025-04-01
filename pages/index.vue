@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="social-links">
+    <div class="social-links desktop-social">
       <ul>
         <li>
           <a href="https://github.com/WithNikos" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -30,13 +30,34 @@
       <h1 class="name">Hyungsuk Do</h1>
       <!-- <h2 class="title">I build things for the web.</h2> -->
       <p class="description">
-        I’ve been mostly working on frontend stuff with MPA lately, but I’m really excited about SPA and want to build my skills in that area.
-        I think my time with JavaScript and making backend things like REST APIs with ASP.NET gives me a good start for it.
-        Recently, I decided to try something new and built a little personal portfolio using Nuxt.js. 
-        It was so much fun—way more lively than MPA—and I loved it. I’m really into SPA these days and even plan to add more features to my portfolio soon. 
-        I’d love to keep growing my career toward SPA and do my best in that space 
-        <a href="https://github.com/WithNikos" target="_blank" rel="noopener noreferrer" class="company-link">Code for HS's Portfolio</a>.
+        <span class="font-size-20">Full Stack Developer</span><br>
+        I specialize in building dynamic and scalable web applications. 
+        <!-- <a href="https://github.com/WithNikos" target="_blank" rel="noopener noreferrer" class="company-link">Code for HS's Portfolio</a> -->
       </p>
+      <div class="social-links mobile-social">
+        <ul>
+          <li>
+            <a href="https://github.com/WithNikos" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/hyungsuk-do-1b5799158/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="about" class="about">
@@ -197,13 +218,13 @@ const currentTab = ref('ADPH')
 
 .greeting {
   color: var(--gold);
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 5px;
 }
 
 .name {
   color: var(--lightest-slate);
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(45px, 8vw, 85px);
   margin-bottom: 10px;
 }
 
@@ -214,6 +235,8 @@ const currentTab = ref('ADPH')
 }
 
 .description {
+  font-size: 16px;
+  line-height: 1.6;
   max-width: 1080px;
   margin-bottom: 50px;
 }
@@ -243,13 +266,13 @@ const currentTab = ref('ADPH')
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-  font-size: 32px;
+  font-size: 34px;
   color: var(--lightest-slate);
 }
 
 .section-number {
   color: var(--gold);
-  font-size: 20px;
+  font-size: 22px;
   margin-right: 10px;
 }
 
@@ -267,6 +290,8 @@ const currentTab = ref('ADPH')
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .highlight {
@@ -329,7 +354,7 @@ const currentTab = ref('ADPH')
 
 .job-title {
   color: var(--lightest-slate);
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
@@ -345,6 +370,8 @@ const currentTab = ref('ADPH')
 
 .job-description {
   list-style: none;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .job-description li {
@@ -415,7 +442,7 @@ const currentTab = ref('ADPH')
 
 .project-title {
   color: var(--gold);
-  font-size: clamp(24px, 5vw, 28px);
+  font-size: clamp(26px, 5vw, 32px);
   margin-bottom: 20px;
 }
 
@@ -423,7 +450,8 @@ const currentTab = ref('ADPH')
   background-color: var(--light-navy);
   padding: 25px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
@@ -438,7 +466,7 @@ const currentTab = ref('ADPH')
 .project-tech-list li {
   color: var(--slate);
   font-family: "SF Mono", monospace;
-  font-size: 13px;
+  font-size: 14px;
   white-space: nowrap;
 }
 
@@ -475,15 +503,94 @@ const currentTab = ref('ADPH')
 }
 
 @media (max-width: 768px) {
+  .home {
+    padding: 0 25px;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding: 180px 0 100px;
+  }
+
+  .greeting {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: clamp(35px, 7vw, 70px);
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-number {
+    font-size: 18px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image {
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 250px;
+  }
+
+  .experience-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    border-left: 2px solid var(--lightest-navy);
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .tab-button {
+    padding: 12px 20px;
+    text-align: left;
+    border-left: 2px solid transparent;
+    border-bottom: none;
+    margin-left: -2px;
+    margin-bottom: 0;
+  }
+
+  .tab-button.active {
+    border-left-color: var(--gold);
+    border-bottom-color: transparent;
+  }
+
+  .job-title {
+    font-size: 20px;
+  }
+
+  .job-description {
+    font-size: 15px;
+  }
+
   .project {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .project-content,
   .project:nth-of-type(2n + 1) .project-content {
     grid-column: 1 / -1;
     text-align: left;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .project-image,
@@ -491,14 +598,72 @@ const currentTab = ref('ADPH')
     grid-column: 1 / -1;
   }
 
-  .project-tech-list,
-  .project:nth-of-type(2n + 1) .project-tech-list {
+  .project-image img {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: clamp(22px, 5vw, 28px);
+  }
+
+  .project-description {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .project-tech-list {
     justify-content: flex-start;
   }
 
-  .project-links,
-  .project:nth-of-type(2n + 1) .project-links {
-    justify-content: flex-start;
+  .project-tech-list li {
+    font-size: 13px;
+  }
+
+  .side-email,
+  .social-links {
+    display: none;
+  }
+
+  .about,
+  .experience,
+  .skill {
+    padding: 60px 0;
+  }
+
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 0 20px;
+  }
+
+  .hero {
+    padding: 150px 0 80px;
+  }
+
+  .name {
+    font-size: clamp(30px, 7vw, 60px);
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .about-image img {
+    max-width: 200px;
+  }
+
+  .project-description {
+    padding: 15px;
+  }
+
+  .cta-button {
+    padding: 10px 16px;
+    font-size: 12px;
   }
 }
 
@@ -640,6 +805,28 @@ const currentTab = ref('ADPH')
   background-color: var(--slate);
 }
 
+@media (max-width: 768px) {
+  .social-links {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .social-links ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 25px;
+    padding-left: 0;
+  }
+
+  .social-links::after {
+    display: none;
+  }
+
+  .description {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 1080px) {
   .social-links {
     left: 20px;
@@ -649,6 +836,42 @@ const currentTab = ref('ADPH')
 @media (max-width: 768px) {
   .social-links {
     display: none;
+  }
+}
+
+.desktop-social {
+  position: fixed;
+  left: 40px;
+  bottom: 0;
+}
+
+.mobile-social {
+  display: none;
+  margin-top: 30px;
+}
+
+.mobile-social ul {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 25px;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .desktop-social {
+    display: none;
+  }
+
+  .mobile-social {
+    display: block;
+  }
+
+  .mobile-social::after {
+    display: none;
+  }
+
+  .description {
+    margin-bottom: 20px;
   }
 }
 
